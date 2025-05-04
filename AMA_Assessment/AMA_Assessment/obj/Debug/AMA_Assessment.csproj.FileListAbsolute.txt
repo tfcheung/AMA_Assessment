@@ -1,0 +1,7 @@
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\bin\Debug\AMA_Assessment.exe.config
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\bin\Debug\AMA_Assessment.exe
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\bin\Debug\AMA_Assessment.pdb
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\obj\Debug\AMA_Assessment.csproj.AssemblyReference.cache
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\obj\Debug\AMA_Assessment.csproj.CoreCompileInputs.cache
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\obj\Debug\AMA_Assessment.exe
+C:\Users\tingf\source\repos\AMA_Assessment\AMA_Assessment\obj\Debug\AMA_Assessment.pdb
