@@ -33,7 +33,6 @@ namespace AMA_Assessment
         {
             int temp;
             bool result = int.TryParse(input, out temp); //Check is the string convertible to integer
-            Console.WriteLine("temp : " + temp);
             if (!result || temp < 0)
             {
                 return false;
@@ -61,26 +60,37 @@ namespace AMA_Assessment
             while (true)
             {
                 Console.WriteLine("Hello Welcome to AMA assessment.");
-                int attemped = 5;
+                bool continueProcess = true;
+                int attemped = 6; 
                 String arg1 = View.ReadingFirstArg();
                 while (!Handler.IsLetter(arg1))
                 {
-                    if (attemped < 1) break;
+                    if (attemped < 1)
+                    {
+                        continueProcess = false;
+                        break;
+                    }
                     attemped--;
                     Console.WriteLine("The word you entered has contained non-letter character. Try it again.");
                     Console.WriteLine(attemped + " attemp(s) remaining");
                     arg1 = View.ReadingFirstArg();
                 }
+                if (!continueProcess) continue; //If the user attemped 6 times invalid input, then return back to the initial.
                 String arg2 = View.ReadingSecondArg();
-                attemped = 5; //Reset to 5 attemps
+                attemped = 6; //Reset the attemp chances
                 while (!Handler.IsVaildNumber(arg2))
                 {
-                    if(attemped < 1) break;
+                    if (attemped < 1)
+                    {
+                        continueProcess = false;
+                        break;
+                    }
                     attemped--;
                     Console.WriteLine("The number you entered is not vaild. Try it again.");
                     Console.WriteLine(attemped + " attemp(s) remaining");
                     arg2 = View.ReadingSecondArg();
                 }
+                if (!continueProcess) continue; //If the user attemped 6 times invalid input, then return back to the initial.
                 int numArg2 = int.Parse(arg2);
                 Console.WriteLine(Handler.ShiftingString(arg1, numArg2));
             }
